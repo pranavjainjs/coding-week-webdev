@@ -1,0 +1,223 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>
+            about me
+        </title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="stylesheet" href="./styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script>
+            function funImg1(){
+                document.getElementById("img").src = "brba.png";
+            }
+            function funImg2(){
+                document.getElementById("img").src = "atonement.png";
+            }
+            function funImg3(){
+                document.getElementById("img").src = "mulan.png";
+            }
+            function funImg4(){
+                document.getElementById("img").src = "catbus.png";
+            }
+            function funImg5(){
+                document.getElementById("img").src = "rezero.png";
+            }
+
+            function funPopup1(){
+                document.getElementById("popup1").style="visibility:visible;"
+                document.getElementById("context").style="visibility:hidden;"
+                document.getElementById("context1").style="visibility:hidden;"
+
+            }
+            function closefunPopup1(){
+                document.getElementById("popup1").style="visibility:hidden;"
+                document.getElementById("context").style="visibility:visible;"
+                document.getElementById("context1").style="visibility:visible;"
+            }
+
+            function funPopup2(){
+                document.getElementById("popup2").style="visibility:visible;"
+                document.getElementById("context").style="visibility:hidden;"
+                document.getElementById("context1").style="visibility:hidden;"
+
+            }
+            function closefunPopup2(){
+                document.getElementById("popup2").style="visibility:hidden;"
+                document.getElementById("context").style="visibility:visible;"
+                document.getElementById("context1").style="visibility:visible;"
+            }
+
+            function funPopup3(){
+                document.getElementById("popup3").style="visibility:visible;"
+                document.getElementById("context").style="visibility:hidden;"
+                document.getElementById("context1").style="visibility:hidden;"
+
+            }
+            function closefunPopup3(){
+                document.getElementById("popup3").style="visibility:hidden;"
+                document.getElementById("context").style="visibility:visible;"
+                document.getElementById("context1").style="visibility:visible;"
+            }
+
+            function funPopup4(){
+                document.getElementById("popup4").style="visibility:visible;"
+                document.getElementById("context").style="visibility:hidden;"
+                document.getElementById("context1").style="visibility:hidden;"
+
+            }
+            function closefunPopup4(){
+                document.getElementById("popup4").style="visibility:hidden;"
+                document.getElementById("context").style="visibility:visible;"
+                document.getElementById("context1").style="visibility:visible;"
+            }
+
+            function funPopup5(){
+                document.getElementById("popup5").style="visibility:visible;"
+                document.getElementById("context").style="visibility:hidden;"
+                document.getElementById("context1").style="visibility:hidden;"
+
+            }
+            function closefunPopup5(){
+                document.getElementById("popup5").style="visibility:hidden;"
+                document.getElementById("context").style="visibility:visible;"
+                document.getElementById("context1").style="visibility:visible;"
+            }
+
+            function helloPrompt() {
+                let text;
+                let person = prompt("Please enter your name:", "Mike Wheeler");
+                if (person == null || person == "") {
+                    text = "Hello dear, how are you?";
+                } else {
+                    text = "Hello " + person + "! How are you today? Please go to full screen (Press F11) for best experience";
+                }
+                document.getElementById("demo").innerHTML = text;
+                document.getElementById("demo").style="color:white";
+       
+                }
+
+        </script>
+    </head>
+
+    <body>
+        <div id="randomID">
+            <img id="img" src="newYear.png" style="width: 100%;">
+        </div>
+        <p id="demo"><a href="#" onclick="helloPrompt()" style="color:white;">press me</a></p>
+
+        <div class="container" style="margin-top: -55%; ">
+            <div class="navbar btn-group btn-group-toggle" data-toggle="buttons" id="context">
+              
+                <button id="btn1" class="btn btn-primary active" onclick="funImg1(); funPopup1()">  Who?  </button>
+                <button id="btn2" class="btn btn-primary" onclick="funImg2(); funPopup2()">What about him?</button>
+                <button id="btn3" class="btn btn-primary active" onclick="funImg3(); funPopup3()">Click Here</button>
+                <button id="btn4" class="btn btn-primary" onclick="funImg4(); funPopup4()">A quote</button>
+                <button id="btn5" class="btn btn-primary active" onclick="funImg5(); funPopup5()">How contact?</button>
+                
+            </div>
+        </div>
+        <br>
+        <br>
+        
+        <div class="container" style="text-align: center;">
+            <div class="pop-up" id="popup1" style="padding: 50px;">
+                <img src="white.jpg" alt="none" style="width: 80%">
+                <div style="margin-top: -350px;">
+                    <i class="fa fa-times" onclick="closefunPopup1()"></i>
+                    <h1>who made this crap?  </h1> 
+                    <br><br><br>
+                    <p>hey, this webpage was made by pranav, who is a freshman at iitg. </p>
+                    <p>it is a very badly made webpage consisting of nothing except basic html and css.</p>
+                    <p>only recently he learnt javascript, so he added a few js functions to brag.</p>
+                    <p>this site could have been made so much better if he had done it properly.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="text-align: center;">
+            <div class="pop-up" id="popup2" style="padding: 50px;">
+                <img src="white.jpg" alt="none" style="width: 80%">
+                <div style="margin-top: -350px;">
+                    <i class="fa fa-times" onclick="closefunPopup2()"></i>
+                    <h1>what are his interests?  </h1> 
+                    <br><br><br>
+                    <p>his interests vary daily and hourly.</p>
+                    <p>out of all things, he is quite interested in movies, cooking and philosophy.</p>
+                    <p>you can find him watching comedy sketches on yt or browsing memes.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="text-align: center;">
+            <div class="pop-up" id="popup3" style="padding: 50px;">
+                <img src="white.jpg" alt="none" style="width: 80%">
+                <div style="margin-top: -350px;">
+                    <i class="fa fa-times" onclick="closefunPopup3()"></i>
+                    <h1>Proceed ahead to get entertained</h1> 
+                    <br><br>
+                    <ul>
+                        <li><a href="http://endless.horse/">Endless Horse</a></li>
+                        <li><a href="https://cat-bounce.com/">Cat bounce</a></li>
+                        <li><a href="https://thispersondoesnotexist.com/">This person does not exist</a></li>
+                        <li><a href="http://www.donothingfor2minutes.com/">2 mins break</a></li>
+                    
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="text-align: center;">
+            <div class="pop-up" id="popup4" style="padding: 50px;">
+                <img src="white.jpg" alt="none" style="width: 80%">
+                <div style="margin-top: -350px;">
+                    <i class="fa fa-times" onclick="closefunPopup4()"></i>
+                     
+                    <br><br><br>
+                    <pre>
+                        Life's but a walking shadow, a poor player,
+                           That struts and frets his hour upon the stage,
+                    And then is heard no more. It is a tale
+                      Told by an idiot, full of sound and fury,
+Signifying nothing.
+                                            - William Shakespeare</pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="text-align: center;">
+            <div class="pop-up" id="popup5" style="padding: 50px;">
+                <img src="white.jpg" alt="none" style="width: 80%">
+                <div style="margin-top: -350px;">
+                    <i class="fa fa-times" onclick="closefunPopup5()"></i>
+                    <br><br><br><br> <h1> you can reach him through </h1> <br><br>
+                    <a href="https://www.instagram.com/the_fakepranav/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/917898212146"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="mailto:pranavjain.js@gmail.com"><i class="fa fa-envelope"></i></a>
+                    <a href="https://github.com/thefakepranav"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://letterboxd.com/MovieGeek9603/"><img src="letterboxd.png" style="height:30px; margin-top:-18px; margin-left:13px;"></a>
+
+                    
+                </div>
+            </div>
+        </div>
+        
+        
+
+        <main style="margin-top:-50px ;">
+            <form id="context1" style="position: relative ;">
+              <input type="text" placeholder="Enter name" name="name" required />
+              <input type="email" placeholder="Enter email" name="email" required />
+              <button class="btn btn-success">Subscribe to newsletter</button>
+            </form>
+            <div class="students"></div>
+        </main>
+
+          
+
+    </body>
+</html>

@@ -1,0 +1,37 @@
+.myAnchor{
+    text-decoration: none;
+}
+
+.myAnchor:hover{
+    text-decoration: none;
+}
+
+.myAnchor:active{
+    text-decoration: none;
+}
+a.myAnchor:visited{
+    text-decoration: none;
+}
+
+.col-sm{
+    background-color: #f4f4f4;
+    margin: 15px;
+}
+
+.card-row{
+    background-color: #f4f4f4;
+    margin: 20px;
+    padding: 20px;
+    width: 22vw;
+    border-radius: 20px;
+}
+
+.imae{
+    max-height: 200px;
+    max-width: 18vw;
+}
+
+.tittle{
+    margin: 15px;
+    font-weight: bold;
+}
